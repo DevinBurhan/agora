@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", //（ECMAScript）。
+    "module": "ESNext", 
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "useDefineForClassFields": true,
+    "skipLibCheck": true,
+    "allowJs": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "sourceMap": true,
+    "declaration": true,
+    "preserveWatchOutput": true,
+    "removeComments": true,
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+
+    /* Linting */
+    "strict": true,
+    "strictNullChecks": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "useUnknownInCatchVariables": false,
+    "baseUrl": ".",
+    /* alias */
+    "paths": {
+      "@/*": ["src/*"],
+      "#/*": ["types/*"]
+    }
+  },
+  "include": ["src", "test", "test/**/*.ts", "types/**/*.ts", "*.json", "**.*js","vite-env.d.ts",],
+  "exclude": ["node_modules", "dist"],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}
